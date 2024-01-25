@@ -1,0 +1,207 @@
+body {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+/* form {
+  margin: 3% auto 0;
+} */
+
+table {
+  margin: 15% auto;
+}
+
+.title {
+  margin: 1% 0 1%;
+}
+
+.chessboard {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  border-color: #FF6F00;
+  box-shadow: 0 0 30px #FF6F00;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.rotated {
+  rotate: 180deg;
+}
+
+.square {
+  width: 12.5%;
+  height: 12.5%;
+  margin: 0 auto;
+  padding: 0;
+  display: inline-block;
+  float:left;
+}
+
+.square.square-highlight {
+  border: solid 1px #000;
+  background-color: #00FF7F;
+  /* background-color: green; */
+  /* box-shadow: 0 0 30px green; */
+}
+
+.black {
+  background-color: #000;
+}
+
+.btn-custom {
+  background-color: #000;
+  border-color: #FF6F00;
+  box-shadow: 0 0 10px #FF6F00;
+  color: #fff;
+  /* margin: 10% auto; */
+}
+
+.btn-custom:hover {
+  border-color: #FF6F00;
+  box-shadow: 0 0 30px #FF6F00;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.player-section {
+  display: inline-block;
+  margin: 10% auto;
+  border-radius: 20px;
+  padding: 20px;;
+  position: relative;
+}
+
+.player1 {
+  background-color: #fff;
+  color: #000;
+  border: solid 3px;
+  border-color: #000;
+  box-shadow: 0 0 30px #00BCFF;
+}
+
+.player2 {
+  background-color: #000;
+  color: #fff;
+  border: solid 3px;
+  border-color: #fff;
+  box-shadow: 0 0 30px #FF0004;
+}
+
+.row {
+  width: 98%;
+  margin: 2% auto;
+}
+
+.top-left-square {
+  border-top-left-radius: 5px;
+}
+
+.top-right-square {
+  border-top-right-radius: 5px;
+}
+
+.bottom-left-square {
+  border-bottom-left-radius: 5px;
+}
+
+.bottom-right-square {
+  border-bottom-right-radius: 5px;
+}
+
+.top-piece-holder {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  top: -51px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
+.bottom-piece-holder {
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  bottom: -51px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
+.piece {
+  height: 100%;
+  position: relative;
+  bottom: 10%;
+}
+
+.piece.rotated {
+  top: 10%;
+}
+
+.piece.dead {
+  width: 12.5%;
+  height: 60px;
+}
+
+.waiting {
+  z-index: -1;
+  opacity: 50%;
+}
+
+.title-in-game {
+  display: none;
+}
+
+.row-in-game {
+  margin: 4% auto;
+}
+
+.gameover-main {
+  opacity: 35%;
+}
+
+.gameover-in-game {
+  display: none;
+}
+
+.gameover-display {
+  position: fixed;
+  display: inline-block;
+  color: red;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameover-title {
+  font-size: 8rem;
+}
+
+.gameover-text {
+  font-size: 3rem;
+}
+
+.glow {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
