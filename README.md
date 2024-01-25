@@ -12,4 +12,4 @@ Sound effects are there so turn up the volume!
 ![image](https://github.com/leojgrant/ChessBrowserApp/assets/66557864/03c912de-3016-4db2-890f-6f41d88d83c4)
 
 ## Winning the game
-![Uploading image.png…]()
+![image](https://github.com/leojgrant/ChessBrowserApp/assets/66557864/5e5ee325-bd52-40f0-aca9-d5b946f33f17)
